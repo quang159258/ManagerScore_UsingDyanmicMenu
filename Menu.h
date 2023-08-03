@@ -115,16 +115,12 @@ loop:
                     switch (choice)
                     {
                     case 0:
-//                        if(Confirm_UI_add())
-//                        {
-//                            UI_Add(ll,NumberOfClass);
-//                            checkMap=true;
-//                            tmp=ll.Tail;
-//                        }
-                            RandomHS(ll,NumberOfClass);
+                        if(Confirm_UI_add())
+                        {
+                            UI_Add(ll,NumberOfClass);
+                            checkMap=true;
                             tmp=ll.Tail;
-                            WriteCSV(ll);
-checkMap=true;
+                        }
                         break;
                     case 1:
                         if (ll.n == 0)
